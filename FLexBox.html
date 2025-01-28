@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexlayout</title>
+        <style>
+           .container{
+            display:flex;
+            flex-wrap: wrap;
+           }
+           
+           
+           nav{
+            display:flex;
+            align-items: center;
+            background-color: bisque;
+            border:3px solid black;
+            border-radius: 10px;
+            width:98vw;
+            flex-wrap: wrap;
+           }
+
+           .head-nav{
+            flex: 1 0 auto;
+            height:fit-content;
+            text-align:center;
+            text-decoration: none;
+            margin:20px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 10px;
+           }
+
+           ul{
+            list-style: none;
+            display:flex;
+            background-color: bisque;
+            justify-content: space-between;
+            height: fit-content;
+            border:3px solid black;
+            border-radius: 10px;
+            flex-wrap: wrap;
+           }
+           footer{
+            background-color: lightcoral;
+            width:100vw;
+            text-align: center;
+            border-radius: 30px;
+           }
+           
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <nav>
+                <a id="home" class="head-nav" href="https://www.w3schools.com/html/">HTML</a>
+                <a class="head-nav" href="https://www.w3schools.com/CSS/">CSS</a>
+                <a class="head-nav" href="https://www.w3schools.com/js/default.asp">Java Script</a>
+                <a class="head-nav" href="https://www.w3schools.com/sql/default.asp">SQL</a>
+            </nav>
+        </header>
+        <main>
+            <article class="main-row">
+                <section>
+                    <h2>Introduction to Web Development</h2>
+                    <p>Web development is a broad term that encompasses all activities involved in creating a website. It includes web design, web content development, client-side/server-side scripting, and network security configuration, among other tasks.</p>
+                </section>
+                <section>
+                    <h2>Importance of HTML, CSS, and JavaScript</h2>
+                    <p>HTML, CSS, and JavaScript are the three core technologies of the World Wide Web. HTML structures the content, CSS styles it, and JavaScript makes it interactive, providing a rich user experience.</p>
+                </section>
+                <section>
+                    <h2>Future Trends in Web Development</h2>
+                    <p>The future of web development is focused on advanced technologies like machine learning, artificial intelligence, and progressive web apps (PWAs), which aim to improve user experience and engagement.</p>
+                </section>
+
+    </article>
+<aside>
+    <h3 >Related Links</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Web Development Guide</a></li>
+        <li><a href="https://www.w3.org/standards/webdesign/htmlcss.html">HTML & CSS Standards</a></li>
+        <li><a href="https://javascript.info/">JavaScript Info</a></li>
+        <li><a href="https://web.dev/learn/">Learn Web Development</a></li>
+    </ul>
+</aside>
+</main>
+        <footer>
+            <p>&copy; 2023 Responsive Web Page</p>
+        </footer>
+        </div>
+    </body>
+</html>
